@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+  <title>E-commerce</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR SECTION-->
+  <header>
+    <nav>
+      <h1>Shop<span>Vista</span></h1>
+      <div id="cart">
+        <div class="navLinks">
+          <ul>
+            <li>Clothing</li>
+            <li>Shoes</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        
+        <span id="cart-count" onclick="openCart()">0</span>
+        <img src="./images/cart-icon.png" alt="Cart" onclick="openCart()">
+      </div>
+    </nav>
+  </header>
+
+  <!-- COVER SECTION -->
+  <section>
+    <div class="cover">
+      <img src="./images/coverImage.jpeg" alt="">
+    </div>
+  </section>
+
+  <!-- MIDDLE TITLE SECTION -->
+  <section class="titleSection">
+    <h1>Today's Best Deals</h1>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="product-list">
+    <!-- Products will render here via index.js file-->
+  </section>
+
+  <!-- Cart items go here -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <h2>Shopping Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will render here via index.js file -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Copyright &copy; 2023 <img src="https://e7.pngegg.com/pngimages/480/581/png-clipart-logo-e-commerce-digital-marketing-brand-trade-ecommerce-text-service.png" alt="logo"> All Rights Reserved.</p>
+  </footer>
+
+
+  <!-- Script -->
+  <script src="index.js"></script>
+</body>
+
+</html>
